@@ -49,11 +49,12 @@ struct MIDI_Message
 	{
 	}
 
-	MIDI_Message(int ch, int dat, bool iscc) : channel(ch),
-		data(dat),
-		isCC(iscc),
-		isNRPN(0),
-		isRelative(0)
+	MIDI_Message(int ch, int dat, bool iscc) :
+		isCC(iscc),    
+        isNRPN(0),
+		isRelative(0),
+        channel(ch),
+        data(dat)    
 	{}
 
 	bool operator==(const MIDI_Message &other) const

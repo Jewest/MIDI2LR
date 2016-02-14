@@ -53,7 +53,7 @@ public:
     MainContentComponent();
     virtual ~MainContentComponent();
 
-    void paint (Graphics&);
+    void paint (Graphics&) override;
 
     // MIDICommandListener interface
     virtual void handleMidiCC(int midiChannel, int controller, int value) override;

@@ -31,10 +31,10 @@ SettingsComponent::SettingsComponent() : ResizableLayout(this), _pickupEnabled("
 _pickupLabel("PickupLabel", ""),
 _profileLocationButton("Choose Profile Folder"),
 _profileLocationLabel("Profile Label"),
+m_autoHideExplainLabel(),
 m_autoHideGroup(),
 m_pickupGroup(),
 m_profileGroup(),
-m_autoHideExplainLabel(),
 m_settingsManager(nullptr)
 {
 

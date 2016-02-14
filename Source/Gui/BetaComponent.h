@@ -28,8 +28,8 @@ public:
     BetaComponent();
     ~BetaComponent();
 
-    void paint (Graphics&);
-    void resized();
+    void paint (Graphics&) override;
+    void resized() override;
 	void Init(void);
 
 	// ButtonListener interface

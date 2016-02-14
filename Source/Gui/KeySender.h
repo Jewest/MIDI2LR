@@ -24,8 +24,8 @@
 #include <windows.h>
 #endif
 
-using namespace std;
 #include <vector>
+using std::vector;
 
 class KeySender
 {

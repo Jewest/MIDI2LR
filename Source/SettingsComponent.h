@@ -35,12 +35,12 @@ public:
 	SettingsComponent();
 	~SettingsComponent();
 
-	void paint(Graphics&);	
+	void paint(Graphics&) override;
 
 	// ButtonListener interface
 	virtual void buttonClicked(Button* button) override;
 
-	virtual void sliderValueChanged(Slider* slider);
+	virtual void sliderValueChanged(Slider* slider) override;
 	void Init(SettingsManager *settingsManager);
 private:
 	ToggleButton _pickupEnabled;

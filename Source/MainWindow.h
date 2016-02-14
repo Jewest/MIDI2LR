@@ -47,7 +47,8 @@ MIDI2LR.  If not, see <http://www.gnu.org/licenses/>.
             centreWithSize(getWidth(), getHeight());
             setVisible(true);            
         }
-
+        
+        virtual ~MainWindow() {}
         void closeButtonPressed() override
         {
             // This is called when the user tries to close this window. Here, we'll just
@@ -66,7 +67,7 @@ MIDI2LR.  If not, see <http://www.gnu.org/licenses/>.
         */
         
         // the timer callback function
-        virtual void timerCallback();
+        virtual void timerCallback() override;
         
     private:
 		int m_autoHideCounter;

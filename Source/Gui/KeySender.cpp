@@ -9,8 +9,9 @@
 */
 
 #include "KeySender.h"
+#ifdef _WIN32
 #include <TlHelp32.h>
-
+#endif
 KeySender::KeySender() : m_shift(false), m_alt(false),m_ctrl(false),m_charToSend(0), m_configured(false)
 {
 
